@@ -24,4 +24,16 @@ uicontrol('parent', main_window,...
           'string' , 'I1');
 
 
+// Sample data
+data = ["Name", "Age", "City";
+        "Alice", "30", "New York";
+        "Bob", "25", "London";
+        "Eve", "28", "Tokyo"];
 
+
+// Create the table UI control
+t = uicontrol(main_window, ...
+    "style", "table", ...
+    "position", [150 150 360 160], ...   // [x y width height]
+    "string", data, ...
+    "tag", "myTable");
